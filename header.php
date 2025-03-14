@@ -79,8 +79,8 @@
                     'menu_class' => 'nav-links nav',
                     'container' => 'nav',
                     'depth' => 3, // Allows dropdowns
-                    'link_before' => '<span class="hah">',
-                    'link_after' => '</span>',
+                    // 'link_before' => '<span class="dropdown-here">',
+                    // 'link_after' => '</span>',
                 ));
             ?>
 
@@ -97,7 +97,7 @@
                 <i class="bi bi-bag"></i> <span class="cart-badge">2</span>
             </a>
         </div>
-        <div data-name="menu-new-arrivals" class="menu-new-arrivals mega-menu hidden">
+        <!-- <div data-name="menu-new-arrivals" class="menu-new-arrivals mega-menu hidden">
             <div class="column">
                 <ul class="main-menu">
                     <li><a href="">New Arrivals</a></li>
@@ -203,7 +203,7 @@
                     <a href="#" class="title">Winter</a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="mobile-menu">
             <span class="close-btn">

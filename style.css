@@ -427,25 +427,51 @@ header.header {
 
 
 /* chakcha css */
-/* Hide sub-menu by default */
-.sub-menu {
+
+.menu-item-has-children >  .first-dropdown 
+    {
+    /* list-style: none; */
     display: none;
     position: absolute;
+    padding-top:20px ;
+    /* margin-top:20px ; */
+    margin-bottom: 10px;
     top: 100%;
-    left: 0;
+    left: -160px;
     background: white;
     padding: 10px 0;
     list-style: none;
     min-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    z-index: 1000;
+    z-index: 1000
+    ;
+    ul{
+    /* padding-left: 60px; */
+    li{
+        list-style: none;
+        right: 0;
+        
+    }
+}
 }
 
+
+
 /* Show submenu on hover */
-.menu-item-has-children:hover > .sub-menu {
-    display: block;
+.menu-item:hover > .first-dropdown {
+    display: flex;
 }
+
+
+
+/* .menu-item-has-children > .sub-menu:first-of-type {
+    display: flex;
+} */
+
+/* .menu-item-has-children  {
+display: block;
+} */
+
 
 /* Style submenu items */
 .sub-menu li {
@@ -470,7 +496,7 @@ header.header {
 }
 
 /* Styling dropdown arrow (optional) */
-.menu-item-has-children > a::after {
+.menu-item-has-children  > a::after {
     content: "";
     display: inline-block;
     width: 10px;
@@ -481,6 +507,3 @@ header.header {
 }
 
 
-.hah{
-    color: red;
-}

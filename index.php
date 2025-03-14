@@ -7,7 +7,9 @@
         </div>
         </main>
 
-
+<h1>
+hi from index.php
+</h1>
 <?php wp_footer(); ?> 
 </body>
 </html>

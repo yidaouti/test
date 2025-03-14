@@ -106,18 +106,8 @@ document.addEventListener("touchend", handleToucheEnd);
 /* chakcha js */
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".menu-item-has-children > a").forEach((parentLink) => {
-        parentLink.addEventListener("click", function (e) {
-            e.preventDefault();
-            let subMenu = this.nextElementSibling;
-            subMenu.classList.toggle("active");
-        });
-    });
-});
-/* chakcha js */
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuLinks = document.querySelectorAll(".dropdown a");
-
+    const firstSubMenu = document.querySelector(".sub-menu");
+    if (firstSubMenu) {
+        firstSubMenu.classList.add("first-dropdown");
+    }
 });
